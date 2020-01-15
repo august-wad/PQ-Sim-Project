@@ -4,6 +4,10 @@
 # name of the character.
 
 define e = Character("Stephen")
+define r = Character("Ramzina")
+image ramzina neutral = im.Scale("ramzina neutral.png", 443, 1000)
+image august neutral = im.Scale("august neutral.png", 352, 870)
+image tonya neutral = im.Scale("tonya_neutral.png", 310, 800)
 
 
 # The game starts here.
@@ -20,13 +24,15 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show ramzina neutral at left
+    show august neutral at right
+    show tonya neutral
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    r "filler text"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    r "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
